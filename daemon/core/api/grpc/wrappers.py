@@ -829,9 +829,9 @@ class Node:
         return core_pb2.Node(
             id=self.id,
             name=self.name,
-            type=self.type.value,
+            type=self.type,
             model=self.model,
-            position=self.position.to_proto(),
+            position=self.position,
             services=self.services,
             config_services=self.config_services,
             emane=self.emane,
